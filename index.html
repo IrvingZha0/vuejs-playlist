@@ -10,15 +10,15 @@
 
 <body>
   <div id="vue-app">
-    <h1>Keyboard Events</h1>
+    <h1>Two-Way Data Binding</h1>
     <label>first name:</label>
-    <input type="text" v-on:keyup="logFirstName" />
-    <label>last name:</label>
-    <input type="text" v-on:keyup.enter="logLastName" />
+    <input type="text" v-model="name" />
+    <span> {{name}}</span>
     <label>age:</label>
-    <input type="text" v-on:keyup.alt.enter="logAge" />
+    <input type="text" v-model="age" />
+    <span>{{age}}</span>
 
-    <p>https://vuejs.org/v2/guide/events.html#Key-Modifiers</p>
+    <p></p>
   </div>
   <script src="app.js" charset="utf-8"></script>
 </body>

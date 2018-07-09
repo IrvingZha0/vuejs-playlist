@@ -10,14 +10,13 @@
 
 <body>
   <div id="vue-app">
-    <h1>Two-Way Data Binding</h1>
-    <label>first name:</label>
-    <input type="text" v-model="name" />
-    <span> {{name}}</span>
-    <label>age:</label>
-    <input type="text" v-model="age" />
-    <span>{{age}}</span>
-
+    <h1>Computed Properties</h1>
+    <button v-on:click="a++">add to a</button>
+    <button v-on:click="b++">add to b</button>
+    <p>A - {{a}}</p>
+    <p>B - {{b}}</p>
+    <p>Age + A = {{addToA}}</p>
+    <p>Age + B = {{addToB}}</p>
     <p></p>
   </div>
   <script src="app.js" charset="utf-8"></script>

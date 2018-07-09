@@ -11,8 +11,8 @@
 <body>
   <div id="vue-app">
     <h1>Events</h1>
-    <button @click="add(1)" type="button" name="button"> add</button>
-    <button @click="subtract(1)" type="button" name="button"> subtract</button>
+    <button v-on:click.once="add(1)" type="button" name="button"> add 1 years</button>
+    <button v-on:click="subtract(1)" type="button" name="button"> subtract 1 years</button>
     <button v-on:dblclick="add(10)" type="button" name="button"> add 10 years</button>
     <button v-on:dblclick="subtract(10)" type="button" name="button"> subtract 10 years</button>
     <p>My age is {{age}}</p>
@@ -20,6 +20,9 @@
       {{x}},
       {{y}}
     </div>
+    <a v-on:click.prevent="alertClick" href="http://www.baidu.com">Baidu</a>
+
+    <p>https://vuejs.org/v2/guide/events.html#Event-Modifiers</p>
   </div>
   <script src="app.js" charset="utf-8"></script>
 </body>

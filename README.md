@@ -22,3 +22,19 @@ For detailed explanation on how things work, consult the [docs for vue-loader](h
 
 you can switch branch for different stage learing
 
+```
+  Computed_Properties
+  Conditionals
+  Data&Binding
+  Dynamic_CSS_Classes
+  Event_Modifiers
+  Events
+  Keyboard_Events
+  Looping_with_v-for
+  Multiple_Vue_Instances
+  Simple_Punchbag_Game
+  Two-Way_Data_Binding
+  data&methods
+  master
+  vue-instance
+```
